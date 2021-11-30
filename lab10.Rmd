@@ -47,3 +47,6 @@ Use cowsay::say() to make a character say something to you
 
 Use `usethis::edit_r_profile()` to get to r profile and edit this
 
+Use `usethis::use_git()` in the console to commit a file to Git after starting the document already not on version control
+
+Use `usethis::use_github()` to create a repo
