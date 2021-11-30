@@ -1,0 +1,49 @@
+---
+title: "lab 10!!!!!!!!!!!!!!wtf!!!!"
+author: "Shayan Kaveh"
+date: "11/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# that which is new
+library(beepr)
+library(paletteer)
+library(praise)
+library(sf)
+library(cowsay)
+
+# that which we know
+library(tidyverse) #duh
+library(usethis)
+library(janitor)
+```
+
+## beepr beep beep doodoo
+
+Use the function `beep()` in the beepr package to make an audio alert when your code is done running. I like `beep(8)` ... good beep.
+
+```{r, eval = FALSE}
+for (i in rev(seq(1:99))) {
+  
+  print(paste(i, "bottles of beer on the wall"))
+}
+
+beep(4) # this makes an audio alert for when it's done
+```
+
+## praise and cowsay
+
+Packages built with a single purpose: to be kind and fun.
+
+```{r}
+praise("${Exclamation}, ${EXCLAMATION}... ${exclamation}!!!!")
+
+praise("Holy ${exclamation}, Batman - this code is ${ADJECTIVE}!")
+```
+
+Use cowsay::say() to make a character say something to you
+
+Use `usethis::edit_r_profile()` to get to r profile and edit this
+
