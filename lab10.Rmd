@@ -50,3 +50,16 @@ Use `usethis::edit_r_profile()` to get to r profile and edit this
 Use `usethis::use_git()` in the console to commit a file to Git after starting the document already not on version control
 
 Use `usethis::use_github()` to create a repo
+
+## paletteer to access thousands of color palettes
+
+```{r}
+storms %>% 
+  group_by(name) %>% 
+  summarize(min_pressure = min(pressure, na.rm = TRUE)) %>% 
+  slice_min(n = 10, min_pressure) %>% 
+  ggplot(aes(x = min_pressure, y = name)) + 
+  geom_col(aes(fill = name)) +
+  scale_fill_paletteer_d("palettetown::milotic")
+```
+
